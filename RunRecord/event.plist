@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>種目</key>
+	<dict>
+		<key>ウルトラマラソン</key>
+		<string></string>
+		<key>フルマラソン</key>
+		<string></string>
+		<key>ハーフマラソン</key>
+		<string></string>
+		<key>10kmラン</key>
+		<string></string>
+	</dict>
+</dict>
+</plist>
