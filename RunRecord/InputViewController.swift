@@ -28,4 +28,10 @@ class InputViewController: UIViewController {
     override func viewDidLoad() {super.viewDidLoad()}
     override func didReceiveMemoryWarning() {super.didReceiveMemoryWarning()}
     
+    @IBAction func tapOk(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    @IBAction func tapCancel(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
 }

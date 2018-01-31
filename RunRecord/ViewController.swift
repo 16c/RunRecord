@@ -36,8 +36,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         var dvc:DetailViewController = segue.destination as! DetailViewController
         dvc.passedIndex = selectedRowIndex
     }
-
-    @IBAction func addRace(_ sender: UIButton) {
-    }
+    
 }
 

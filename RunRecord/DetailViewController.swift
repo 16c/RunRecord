@@ -19,8 +19,8 @@ class DetailViewController: UIViewController {
         for(key,data) in dic!{
             print(key)
         }
-        
     }
     override func didReceiveMemoryWarning() {super.didReceiveMemoryWarning()}
+    
     
 }
