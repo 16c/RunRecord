@@ -25,7 +25,32 @@ class InputViewController: UIViewController {
     @IBOutlet weak var courseImage: UITextField!
     @IBOutlet weak var satisfiedSlider: UISlider!
     
-    override func viewDidLoad() {super.viewDidLoad()}
+    override func viewDidLoad() {super.viewDidLoad()
+        let filePath = Bundle.main.path(forResource: "pref", ofType: "plist")
+        let dic = NSDictionary(contentsOfFile: filePath!)
+        let dic2 = NSArray(contentsOfFile: filePath!)
+      
+        
+        
+//        typealias SortDescriptor<Value> = (Value, Value) -> Bool
+//        func combine<Value>(sortDescriptors: [SortDescriptor<Value>]) -> SortDescriptor<Value> {
+//            return { lhs, rhs in
+//                for isOrderedBefore in sortDescriptors {
+//                    if isOrderedBefore(lhs,rhs) { return true }
+//                    if isOrderedBefore(rhs,lhs) { return false }
+//                }
+//                return false
+//            }
+//        }
+        
+//        for(key,data) in dic!{
+//            print(key)
+//            let dic2 = NSDictionary(dictionary: data)
+//            for (key2,data2) in dic2{
+//                print(key2,data2)
+//            }
+//        }
+    }
     override func didReceiveMemoryWarning() {super.didReceiveMemoryWarning()}
     
     @IBAction func tapOk(_ sender: UIButton) {

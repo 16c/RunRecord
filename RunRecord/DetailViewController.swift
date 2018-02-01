@@ -13,12 +13,7 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let filePath = Bundle.main.path(forResource: "pref", ofType: "plist")
-        let dic = NSDictionary(contentsOfFile: filePath!)
-        
-        for(key,data) in dic!{
-            print(key)
-        }
+      
     }
     override func didReceiveMemoryWarning() {super.didReceiveMemoryWarning()}
     

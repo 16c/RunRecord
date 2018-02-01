@@ -16,6 +16,7 @@ class PictureViewController: UIViewController,UICollectionViewDataSource,UIColle
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell:PictureViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! PictureViewCell
+        
         cell.thum.image = UIImage(named: "m2a.jpg")
         cell.backgroundColor = UIColor.black
         return cell

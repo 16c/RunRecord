@@ -38,16 +38,23 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="＜大会リスト＞" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYC-dq-5gP">
-                                <rect key="frame" x="8" y="384" width="122" height="21"/>
+                                <rect key="frame" x="8" y="386" width="122" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JAx-ec-dh0">
-                                <rect key="frame" x="12" y="64" width="296" height="302"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="raceyear.png" translatesAutoresizingMaskIntoConstraints="NO" id="JAx-ec-dh0">
+                                <rect key="frame" x="12" y="81" width="296" height="274"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="f2v-fq-pbM" appends="YES" id="1Rt-iK-Qth"/>
+                                    <outletCollection property="gestureRecognizers" destination="cmC-3J-5g8" appends="YES" id="139-Pw-od7"/>
+                                    <outletCollection property="gestureRecognizers" destination="hA8-je-ahV" appends="YES" id="MXd-Q7-ndk"/>
+                                    <outletCollection property="gestureRecognizers" destination="f2v-fq-pbM" appends="YES" id="Rod-Cz-3SQ"/>
+                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UP2-K7-bHM">
                                 <rect key="frame" x="271" y="379" width="33" height="30"/>
@@ -60,17 +67,72 @@
                                     <segue destination="2JC-g8-iv1" kind="presentation" identifier="KeyFromMain" id="unP-Nq-LVN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKJ-Tb-sKM">
+                                <rect key="frame" x="14" y="356" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="種目別">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W9T-QB-U4P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RB3-zO-vpO">
+                                <rect key="frame" x="145" y="356" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="年別">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapYear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IDt-Q1-vuf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95I-Yq-64C">
+                                <rect key="frame" x="246" y="356" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="満足度別">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapSatisfy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rtf-rx-VAF"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="maintitle.png" translatesAutoresizingMaskIntoConstraints="NO" id="AWe-3k-9e4">
+                                <rect key="frame" x="23" y="90" width="146" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="noteyear.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ke1-gn-1jj">
+                                <rect key="frame" x="23" y="140" width="64" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="lFZ-MZ-MwY"/>
                     <connections>
+                        <outlet property="btnEvent" destination="RB3-zO-vpO" id="jUP-py-RfO"/>
+                        <outlet property="btnSatisfy" destination="95I-Yq-64C" id="2YA-XD-sHp"/>
+                        <outlet property="btnYear" destination="RB3-zO-vpO" id="KRA-6f-XAJ"/>
+                        <outlet property="imgNotes" destination="Ke1-gn-1jj" id="3Jh-H3-c9F"/>
+                        <outlet property="imgTitle" destination="Ke1-gn-1jj" id="ufy-jA-Jim"/>
+                        <outlet property="jmap" destination="JAx-ec-dh0" id="2W9-gl-P3j"/>
                         <outlet property="raceTable" destination="qIm-hc-Uh1" id="S0i-vI-i3P"/>
                         <segue destination="Kln-Hb-sb0" kind="show" identifier="RaceDetail" id="RsN-3W-6Tf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="hA8-je-ahV"/>
+                <swipeGestureRecognizer direction="left" id="f2v-fq-pbM">
+                    <connections>
+                        <action selector="swipeLeft:" destination="BYZ-38-t0r" id="rjU-0w-fIm"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="cmC-3J-5g8">
+                    <connections>
+                        <action selector="swipeRight:" destination="BYZ-38-t0r" id="4op-sv-2NZ"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="474.375" y="132.04225352112675"/>
         </scene>
@@ -483,11 +545,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="LaX-Qg-MJq">
-                                <rect key="frame" x="113" y="534" width="193" height="30"/>
+                                <rect key="frame" x="113" y="534" width="72" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuc-fL-aMs">
-                                <rect key="frame" x="48" y="616" width="30" height="30"/>
+                                <rect key="frame" x="198" y="533" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="OK"/>
                                 <connections>
@@ -495,7 +557,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXQ-ho-YCB">
-                                <rect key="frame" x="209" y="616" width="48" height="30"/>
+                                <rect key="frame" x="249" y="534" width="48" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
@@ -539,7 +601,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Lz9-0v-4JW">
-                                <rect key="frame" x="0.0" y="65" width="320" height="503"/>
+                                <rect key="frame" x="0.0" y="65" width="320" height="459"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cJU-Qb-meZ">
@@ -572,6 +634,16 @@
                                     <outlet property="delegate" destination="CM1-Kg-zaD" id="FSM-MB-fzH"/>
                                 </connections>
                             </collectionView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UYs-wL-Hxn">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="camera" id="bfq-pk-rWF"/>
+                                    <barButtonItem systemItem="add" id="E5d-cP-y92"/>
+                                    <barButtonItem systemItem="edit" id="GOH-io-ITJ"/>
+                                    <barButtonItem systemItem="trash" id="ULJ-nc-0gp"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="eTf-Vj-3GI"/>
@@ -629,6 +701,9 @@
     </scenes>
     <resources>
         <image name="m2a.JPG" width="3024" height="4032"/>
+        <image name="maintitle.png" width="1520" height="308"/>
+        <image name="noteyear.png" width="228" height="636"/>
+        <image name="raceyear.png" width="1200" height="1200"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="unP-Nq-LVN"/>

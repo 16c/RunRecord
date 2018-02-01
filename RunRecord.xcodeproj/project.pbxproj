@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		682375502021F8C000ED346B /* raceevent.png in Resources */ = {isa = PBXBuildFile; fileRef = 6823754F2021F8C000ED346B /* raceevent.png */; };
+		682375522021F8D700ED346B /* racesatisfy.png in Resources */ = {isa = PBXBuildFile; fileRef = 682375512021F8D700ED346B /* racesatisfy.png */; };
+		682375542021F8FD00ED346B /* raceyear.png in Resources */ = {isa = PBXBuildFile; fileRef = 682375532021F8FD00ED346B /* raceyear.png */; };
+		6823755620222A7200ED346B /* noteevent.png in Resources */ = {isa = PBXBuildFile; fileRef = 6823755520222A7200ED346B /* noteevent.png */; };
+		6823755820222A7B00ED346B /* notesatisfy.png in Resources */ = {isa = PBXBuildFile; fileRef = 6823755720222A7B00ED346B /* notesatisfy.png */; };
+		6823755A20222A8300ED346B /* noteyear.png in Resources */ = {isa = PBXBuildFile; fileRef = 6823755920222A8300ED346B /* noteyear.png */; };
+		6823755C20222C2E00ED346B /* maintitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 6823755B20222C2E00ED346B /* maintitle.png */; };
 		6839151E201B1A6300D6C815 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6839151D201B1A6300D6C815 /* AppDelegate.swift */; };
 		68391520201B1A6300D6C815 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6839151F201B1A6300D6C815 /* ViewController.swift */; };
 		68391523201B1A6300D6C815 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68391521201B1A6300D6C815 /* Main.storyboard */; };
@@ -23,6 +30,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6823754F2021F8C000ED346B /* raceevent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = raceevent.png; sourceTree = "<group>"; };
+		682375512021F8D700ED346B /* racesatisfy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = racesatisfy.png; sourceTree = "<group>"; };
+		682375532021F8FD00ED346B /* raceyear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = raceyear.png; sourceTree = "<group>"; };
+		6823755520222A7200ED346B /* noteevent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noteevent.png; sourceTree = "<group>"; };
+		6823755720222A7B00ED346B /* notesatisfy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notesatisfy.png; sourceTree = "<group>"; };
+		6823755920222A8300ED346B /* noteyear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noteyear.png; sourceTree = "<group>"; };
+		6823755B20222C2E00ED346B /* maintitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maintitle.png; sourceTree = "<group>"; };
 		6839151A201B1A6300D6C815 /* RunRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6839151D201B1A6300D6C815 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6839151F201B1A6300D6C815 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +84,13 @@
 		6839151C201B1A6300D6C815 /* RunRecord */ = {
 			isa = PBXGroup;
 			children = (
+				6823755B20222C2E00ED346B /* maintitle.png */,
+				6823755520222A7200ED346B /* noteevent.png */,
+				6823755720222A7B00ED346B /* notesatisfy.png */,
+				6823755920222A8300ED346B /* noteyear.png */,
+				6823754F2021F8C000ED346B /* raceevent.png */,
+				682375532021F8FD00ED346B /* raceyear.png */,
+				682375512021F8D700ED346B /* racesatisfy.png */,
 				68EF5DF72020C482005766BF /* m2a.JPG */,
 				6839151D201B1A6300D6C815 /* AppDelegate.swift */,
 				6839151F201B1A6300D6C815 /* ViewController.swift */,
@@ -147,11 +168,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				682375522021F8D700ED346B /* racesatisfy.png in Resources */,
 				68EF5DF82020C482005766BF /* m2a.JPG in Resources */,
+				6823755620222A7200ED346B /* noteevent.png in Resources */,
 				68391528201B1A6300D6C815 /* LaunchScreen.storyboard in Resources */,
+				682375542021F8FD00ED346B /* raceyear.png in Resources */,
+				682375502021F8C000ED346B /* raceevent.png in Resources */,
+				6823755A20222A8300ED346B /* noteyear.png in Resources */,
 				68391525201B1A6300D6C815 /* Assets.xcassets in Resources */,
 				68D30C00201FE5B600AC47B0 /* pref.plist in Resources */,
 				68391523201B1A6300D6C815 /* Main.storyboard in Resources */,
+				6823755C20222C2E00ED346B /* maintitle.png in Resources */,
+				6823755820222A7B00ED346B /* notesatisfy.png in Resources */,
 				68D30C02201FEE7600AC47B0 /* event.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
